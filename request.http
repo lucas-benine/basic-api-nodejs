@@ -1,7 +1,15 @@
-POST http://localhost:4002/products 
+POST http://localhost:4002/insertProduct 
 content-type: application/json
 
 {
-    "name": "Lapís",
-    "price": 2
+    "name": "Caneta",
+    "price": 5
 }
+
+###
+
+GET http://localhost:4002/findAllProducts
+
+###
+
+GET http://localhost:4002/findProduct/75164e89-bbed-432e-80a2-980fde914926

@@ -7,7 +7,7 @@ app.use(express.json());
 
 const products = [];
 
-app.post('/products', (request, response) => {
+app.post('/insertProduct', (request, response) => {
     const { name, price } = request.body;
     
     const product = {
@@ -17,6 +17,16 @@ app.post('/products', (request, response) => {
     }
 
     products.push(product);
+    return response.json(product);
+});
+
+app.get('/findAllProducts', (request, response) => {
+    return response.json(products);
+});
+
+app.get('/findProduct/:id', (request, response) => {
+    const { id } = request.params;
+    const product = products.find(p => p.id == (id));
     return response.json(product);
 })
 
