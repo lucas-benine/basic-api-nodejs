@@ -2,14 +2,24 @@ POST http://localhost:4002/insertProduct
 content-type: application/json
 
 {
-    "name": "Caneta",
-    "price": 5
+    "name": "Mochila",
+    "price": 15
 }
 
 ###
-
 GET http://localhost:4002/findAllProducts
 
 ###
-
 GET http://localhost:4002/findProduct/75164e89-bbed-432e-80a2-980fde914926
+
+###
+PUT http://localhost:4002/updateProduct/3b5f3e25-bd37-409f-aa70-462b4deed2f2
+content-type: application/json
+
+{
+    "name": "Caneta Rosa",
+    "price": 4.55
+}
+
+###
+DELETE http://localhost:4002/deleteProduct/7d98de58-cef9-4e76-96d1-8ea8f3c1aae6
