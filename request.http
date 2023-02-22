@@ -2,8 +2,8 @@ POST http://localhost:4002/insertProduct
 content-type: application/json
 
 {
-    "name": "Mochila",
-    "price": 15
+    "name": "Lápis",
+    "price": 1.8
 }
 
 ###
@@ -13,7 +13,7 @@ GET http://localhost:4002/findAllProducts
 GET http://localhost:4002/findProduct/75164e89-bbed-432e-80a2-980fde914926
 
 ###
-PUT http://localhost:4002/updateProduct/3b5f3e25-bd37-409f-aa70-462b4deed2f2
+PUT http://localhost:4002/updateProduct/6d39aef1-c687-43d1-a52a-8ed52a3dd4b0
 content-type: application/json
 
 {
@@ -22,4 +22,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:4002/deleteProduct/7d98de58-cef9-4e76-96d1-8ea8f3c1aae6
+DELETE http://localhost:4002/deleteProduct/18ce5d7a-bf7f-454d-b0fc-f307f84824ed
